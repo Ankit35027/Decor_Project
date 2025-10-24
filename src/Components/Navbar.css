@@ -1,0 +1,42 @@
+.navbar{
+    display: flex;
+    justify-content: space-between;
+    padding: 2vh 1vw;
+    align-items: center;
+    background-color: #ef33c6;
+    height: 10vh;
+
+
+
+    
+}
+.features ul{
+    display: flex;
+    justify-content: space-between;
+    margin: 0;
+
+}
+.features ul li{
+    margin-left: 1vw;
+    list-style: none;
+    color: #f7f9a9;
+    font-size: 2vw;
+    border-right: 3px solid rgb(244, 9, 9);
+    padding: 0 1vw;
+}
+
+.logo h3{
+    color: #FDFFB8;
+    font-size: 3vw;
+    font-family: "Playwrite DE SAS", cursive;
+    font-weight: 400;
+
+}
+
+.img img{
+    height: 12vh;
+    width: 9vw;
+    border-radius: 50%;
+}
+
+
