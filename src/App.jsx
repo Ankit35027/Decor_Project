@@ -1,20 +1,16 @@
-import { useState } from 'react'
-import reactLogo from './assets/react.svg'
-import viteLogo from '/vite.svg'
-import './App.css'
-import Navbar from "./Components/Navbar"
-import HeroSec  from './Components/HeroSec.jsx'
+import "./index.css";
+import Navbar from "./Components/Navbar";
+import HeroSec from "./Components/HeroSec";
+import FeaturedProducts from "./Components/FeaturedProducts";
+import Footer from "./Components/Footer";
 
-function App() {
-  const [count, setCount] = useState(0)
-
+export default function App() {
   return (
     <>
-    <Navbar/>
-    <HeroSec/>
-    
+      <Navbar />
+      <HeroSec />
+      <FeaturedProducts />
+      <Footer />
     </>
-  )
+  );
 }
-
-export default App

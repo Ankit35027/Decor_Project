@@ -1,42 +1,54 @@
-.navbar{
-    display: flex;
-    justify-content: space-between;
-    padding: 2vh 1vw;
-    align-items: center;
-    background-color: #ef33c6;
-    height: 10vh;
-
-
-
-    
-}
-.features ul{
-    display: flex;
-    justify-content: space-between;
-    margin: 0;
-
-}
-.features ul li{
-    margin-left: 1vw;
-    list-style: none;
-    color: #f7f9a9;
-    font-size: 2vw;
-    border-right: 3px solid rgb(244, 9, 9);
-    padding: 0 1vw;
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 1.2rem 3rem;
+  background-color: #e91e63;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2);
+  position: sticky;
+  top: 0;
+  z-index: 100;
+  animation: fadeIn 1s ease;
 }
 
-.logo h3{
-    color: #FDFFB8;
-    font-size: 3vw;
-    font-family: "Playwrite DE SAS", cursive;
-    font-weight: 400;
-
+.logo {
+  font-family: "Playfair Display", serif;
+  font-size: 2rem;
+  color: #fff9f9;
+  font-weight: 700;
+  letter-spacing: 2px;
+  text-shadow: 0 0 8px #ffd700;
 }
 
-.img img{
-    height: 12vh;
-    width: 9vw;
-    border-radius: 50%;
+.logo-img {
+  width: 70px;
+  height: 70px;
+  border-radius: 50%;
+  border: 2px solid #ffd700;
 }
 
+.nav-links {
+  display: flex;
+  gap: 2rem;
+  list-style: none;
+}
 
+.nav-links a {
+  color: #fff9f9;
+  text-decoration: none;
+  font-size: 1.1rem;
+  transition: 0.3s ease;
+  border-right: 2px solid rgba(255, 215, 0, 0.4);
+  padding-right: 1rem;
+}
+
+.nav-links a:hover {
+  color: #ffd700;
+  text-shadow: 0 0 10px #fff;
+  transform: scale(1.1);
+}
+
+@keyframes fadeIn {
+  from { opacity: 0; transform: translateY(-10px); }
+  to { opacity: 1; transform: translateY(0); }
+}
